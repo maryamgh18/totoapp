@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<h:head><title>Call webservice test</title>
+</h:head>
+<h:body>
+
+<div align="center" style="height: 100%" >
+    <p:notificationBar position="top" effect="slide" styleClass="top" widgetVar="bar">
+        <h:outputText value="PrimeFaces Rocks!" style="font-size:36px;" />
+    </p:notificationBar>
+
+    <br/>
+
+    <p:layout>
+        <p:layoutUnit position="west" resizable="true" size="100" minSize="40" >
+
+        </p:layoutUnit>
+
+        <p:layoutUnit position="center">
+            <p:fieldset legend=" Test for calling the web service from Amoozesh!">
+
+                <h:form>
+
+                    <b>shoPersoneli:</b> <p:inputText value="#{testBean.shoPersoneli}"/><br/>
+                    <br></br>
+                    <p:commandButton action="#{testBean.methodCall}"  value="Submit" ajax="false" />
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+
+
+                    <p:dataTable var="list" value="#{testBean.glVAzmnSayerOmomiTkReps}" dir="rtl">
+                        <p:column headerText="Id">
+                            <h:outputText value="#{list.id}" />
+                        </p:column>
+
+
+                        <p:column headerText="shoPersoneli">
+                            <h:outputText value="#{list.shoPersoneli}" />
+                        </p:column>
+
+
+
+                        <p:column headerText="skhsId">
+                            <h:outputText value="#{list.skhsId}" />
+                        </p:column>
+
+                        <p:column headerText="skhsFirstName">
+                            <h:outputText value="#{list.skhsFirstName}" />
+                        </p:column>
+
+                        <p:column headerText="skhsLastName">
+                            <h:outputText value="#{list.skhsLastName}" />
+                        </p:column>
+                    </p:dataTable>
+
+
+
+
+                </h:form>
+            </p:fieldset>
+        </p:layoutUnit>
+    </p:layout>
+
+
+
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+
+
+</h:body></html>

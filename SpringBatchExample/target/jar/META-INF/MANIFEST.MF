@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Class-Path: spring-batch-core-2.2.0.RELEASE.jar spring-retry-1.0.2.REL
+ EASE.jar spring-aop-3.2.0.RELEASE.jar jettison-1.1.jar spring-web-3.2
+ .0.RELEASE.jar commons-dbcp-1.2.2.jar spring-webmvc-3.2.0.RELEASE.jar
+  commons-lang-2.5.jar spring-batch-test-2.2.0.RELEASE.jar spring-test
+ -3.2.0.RELEASE.jar spring-batch-infrastructure-2.2.0.RELEASE.jar spri
+ ng-tx-3.2.2.RELEASE.jar aopalliance-1.0.jar commons-logging-1.1.1.jar
+  commons-pool-1.3.jar spring-beans-3.2.2.RELEASE.jar spring-expressio
+ n-3.2.0.RELEASE.jar xstream-1.3.jar spring-oxm-3.2.2.RELEASE.jar comm
+ ons-io-1.4.jar spring-context-3.2.0.RELEASE.jar spring-core-3.2.2.REL
+ EASE.jar commons-collections-3.2.jar spring-jdbc-3.2.2.RELEASE.jar xp
+ p3_min-1.1.4c.jar ojdbc6-11.2.0.3.jar
+Main-Class: com.mkyong.App
+
